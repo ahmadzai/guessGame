@@ -1,0 +1,39 @@
+{# 'src/Guess/Bundle/Resources/views/layout.html.twig' #}
+<html>
+<head>
+<title>
+{% block title %}
+Guess Game
+{% endblock %}
+</title>
+{# ... #}
+{% block stylesheets %}
+<link href="{{ asset('bundles/guess/css/main.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+</head>
+<body>
+<!-- Main div for all element -->
+<div id="main" >
+<!-- Div for header -->
+<div id="header">
+<?php include('header.html');?>
+</div>
+<!-- Div for content -->
+<div id="content">
+{% block content %}
+content going here
+{% endblock %}
+</div>
+<!-- Div for footer -->
+<div id="footer">
+{% block footer %}
+footer going here
+{% endblock %}
+</div>
+</div>
+{# for linking java script #}
+{% block javascripts %}
+
+{% endblock %}
+</body>
+</html>

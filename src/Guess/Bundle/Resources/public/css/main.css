@@ -1,0 +1,19 @@
+html {
+	
+	background-color: olive;
+	font-size: 100%;
+}
+
+body {
+	
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#navigation {
+	height: 10%;
+}
+#footer {
+	
+	height: 10%;
+}

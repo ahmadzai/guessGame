@@ -1,0 +1,7 @@
+GuessBundle_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: GuessBundle:Default:index }
+
+_homepage:
+    pattern: /home
+    defaults: {_controller: GuessBundle:Main:index }

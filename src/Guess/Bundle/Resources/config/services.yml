@@ -1,0 +1,7 @@
+parameters:
+#    guess.example.class: Guess\Bundle\Example
+
+services:
+#    guess.example:
+#        class: %guess.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
