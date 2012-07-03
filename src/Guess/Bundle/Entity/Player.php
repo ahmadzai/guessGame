@@ -6,24 +6,46 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Guess\Bundle\Entity\Player
+ *
+ * @ORM\Table(name="Player")
+ * @ORM\Entity
  */
 class Player
 {
     /**
+     * @var integer $id
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
      * @var string $name
+     *
+     * @ORM\Column(name="name", type="string", length=30, nullable=false)
      */
     private $name;
 
     /**
-     * @var string $logindate
+     * @var datetime $date
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=false)
      */
-    private $logindate;
+    private $date;
+
+
 
     /**
-     * @var integer $id
+     * Get id
+     *
+     * @return integer 
      */
-    private $id;
-
+    public function getId()
+    {
+        return $this->id;
+    }
 
     /**
      * Set name
@@ -46,32 +68,22 @@ class Player
     }
 
     /**
-     * Set logindate
+     * Set date
      *
-     * @param string $logindate
+     * @param datetime $date
      */
-    public function setLogindate($logindate)
+    public function setDate($date)
     {
-        $this->logindate = $logindate;
+        $this->date = $date;
     }
 
     /**
-     * Get logindate
+     * Get date
      *
-     * @return string 
+     * @return datetime 
      */
-    public function getLogindate()
+    public function getDate()
     {
-        return $this->logindate;
-    }
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
+        return $this->date;
     }
 }

@@ -1,7 +1,19 @@
-GuessBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: GuessBundle:Default:index }
-
 _homepage:
     pattern: /home
     defaults: {_controller: GuessBundle:Main:index }
+
+_play:
+    pattern: /play
+    defaults: {_controller: GuessBundle:Main:play }
+
+_score:
+    pattern: /score
+    defaults: {_controller: GuessBundle:Main:myScore }
+    
+_top10:
+    pattern: /top10
+    defaults: {_controller: GuessBundle:Main:top10 }
+    
+_howtoplay:
+    pattern: /howto
+    defaults: {_controller: GuessBundle:Main:howto }
