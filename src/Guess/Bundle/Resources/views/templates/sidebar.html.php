@@ -4,6 +4,11 @@
 </div>
 <div id="one-d">
 <ul id="toplist">
+	<?php // $top1d = $top10['d_1']; 
+	foreach($top10 as $topd1) {
+		echo "<li> <span>".$topd1." : "."</span></li>";
+	}
+	?>
 	<li> <span>Wazir khan 12 point </span></li>
 </ul>
 </div>
@@ -20,6 +25,6 @@
 </div>
 <div id="three-d">
 <ul id="toplist">
-	<li> <span>Wazir khan 12 point </span></li>
+	<li> <span>Wazir khan 12 point </span></li>	
 </ul>
 </div>

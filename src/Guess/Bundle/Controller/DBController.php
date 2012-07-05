@@ -51,6 +51,12 @@ class DBController extends Controller {
 	 */
 	public function getTop10Action() {
 		
+		//$top10['d_1'] = $this->getTop10(1);
+		//$top10['d_2'] = $this->getTop10(2);
+		//$top10['d_3'] = $this->getTop10(3);
+		$score = array('wazir', 'razzaq', 'javid');
+		return $this->render('GuessBundle:templates:sidebar.html.php', array('top10' => $score));
+		
 	}
 	
 	/**
@@ -58,7 +64,8 @@ class DBController extends Controller {
 	 * @param int $game
 	 * @param int $level
 	 */
-	public function getTop10($game, $level) {
+	public function getTop10score($game) {
+		
 		
 	}
 

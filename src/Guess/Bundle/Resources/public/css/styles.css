@@ -105,7 +105,7 @@ hr {
 #menu {
 	height: 47px;
 	width: 100%;
-	background-color: #FF0040;
+	background-color: #FF4000;
 	clear:both;
 }
 
@@ -155,7 +155,7 @@ hr {
 	width: 100%;
 	height: 100px;
 	margin: 0 auto;
-	background: #0F4BFF;
+	background: #086A87;
 	clear:both;
 }
 
@@ -198,6 +198,7 @@ hr {
 	margin: 0 auto;
 	background: #FFFFFF;
 	border-top: none;
+	border-left: thin #4D79FF solid;
 }
 
 /* Content */
@@ -213,74 +214,11 @@ hr {
 
 /* Sidebars */
 
-.sidebar {
+#sidebar {
 	vertical-align: top;
 	float: right;
 	width:25%;
 }
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.sidebar li {
-	margin-bottom: 2em;
-}
-
-.sidebar li ul {
-}
-
-.sidebar li li {
-	margin: 0;
-}
-
-.sidebar li h2 {
-	margin: 0 0 10px 0;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #B10961;
-}
-
-#sidebar1 {
-	width: 210px;
-	padding: 0px 20px 0px 20px;
-	background: #F2F2F2;
-}
-
-#sidebar2 {
-	width: 180px;
-	padding: 0px 20px 0px 20px;
-}
-
-#sidebar2 li h2 {
-	margin: 0 0 1em 0;
-	padding: 15px 0  0 0px;
-	height: 20px;
-}
-
-#sidebar2 li ul {
-	line-height: normal;
-}
-
-#sidebar2 li li {
-	padding: 5px;
-	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-#sidebar2 li a {
-	background: url(images/img04.gif) no-repeat left 50%;
-	border: none;
-	padding-left: 10px;
-	text-transform: uppercase;
-}
-
-#sidebar2 li a:hover {
-	border: none;
-	padding-left: 10px;
-}
-
 
 
 /* Footer */

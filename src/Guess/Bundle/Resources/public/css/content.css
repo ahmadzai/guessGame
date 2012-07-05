@@ -3,7 +3,8 @@
 	padding-top: 4px;
 	padding-bottom: 4px;
 	margin:0px;
-	background-color: gray;
+	background-color: #FF4000;
+	color: white;
 	width: 100%;
 }
 #sidebar span {
@@ -20,7 +21,11 @@
 	background-color: #0489B1;
 	cursor: pointer;
 }
-
+#one-d, #two-d, #three-d {
+	border-left: thin #4D79FF solid;
+	border-right: thin #4D79FF solid;
+	border-bottom: thin #4D79FF solid;
+}
 #1dlist {
 	width:100%;
 	padding: 2px;
@@ -33,17 +38,18 @@
 }
 #toplist li {
 	padding: 2px;
-	background-color: navy;
+	background-color: #CEF6F5;
 }
 
 #content-home {
 	padding:4px;
 }
 #content-home h2{
-	color: #4D79FF;
+	color: #0B2161;
 	padding-left: 4px;
 }
 #content-home p{
+	color: #0B2161;
 	padding:4px;
 	margin: 0;
 	text-align: justify;

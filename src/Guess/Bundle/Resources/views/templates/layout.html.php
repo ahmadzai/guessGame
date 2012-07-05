@@ -5,7 +5,8 @@ $view['slots']->start('menu');
 echo $view->render('::header.html.php', array('page' => $page));
 $view['slots']->stop();
 $view['slots'] -> start('sidebar');
-echo $view->render('GuessBundle:templates:sidebar.html.php');
+//echo $view->render('GuessBundle:templates:sidebar.html.php');
+ echo $view['actions']->render('GuessBundle:DB:getTop10');
 $view['slots']->stop();
 ?>
 <div id="content-home">
