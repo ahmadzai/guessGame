@@ -103,3 +103,128 @@
 	height: 200px;
 }
 
+#loginInfo {
+	font-size: 14px;
+	color:#0B2161;
+	border: thin #4D79FF solid;
+	padding:5px;
+	width:80%;
+	margin-left:10%;
+	margin-top:5%;
+}
+#loginInfo p {
+	font-size: 16px;
+	margin: 2px;
+	padding: 2px;
+	text-align:justify;
+	
+}
+#loginInfo label {
+	width:100px;
+	padding:2px;
+	font-size:16px;
+}
+#loginInfo div {
+	margin-top: 10px;
+	clear:both;
+}
+#form_username{
+	border: thin gray solid;
+	height: 25px;
+	width: 150px;
+	font-size:16px;
+}
+
+#btnsubmit {
+	width:70px;
+	text-align: center;
+	padding:2px;
+
+}
+#form_gamelevel, #form_turns {
+	padding: 2px;
+}
+
+.tblguess {
+	padding:0;
+	border-left:thin #4D79FF solid;
+}
+.tblguess tr:first-child td{
+	color: #0B4C5F;
+	padding:4px;
+	border: thin #4D79FF solid;
+	border-left:0;
+	text-align: center;
+	font-weight: bold;
+}
+.tblguess tr td {
+	padding:5px;
+	color: #0B4C5F;
+	border: thin #4D79FF solid;
+	border-left:0;
+	border-top:0;
+}
+#tblgame {
+
+}
+#tblgame tr td {
+	font-size: 14px;
+	color: #0B4C5F;
+}
+#form_guess1, #form_guess2, #form_guess3 {
+	width: 80px;
+	padding:4px;
+	border: thin #0B3861 solid;
+}
+#btnguess {
+	padding:5px;
+}
+#divgame {
+	margin-left:5%;
+	float:left;
+	width: 55%;
+	padding-bottom: 50px;
+}
+#divguess {
+	float: left;
+	width: 38%;
+	padding-bottom: 50px;
+}
+#play {
+	margin-bottom:10px;
+	padding-bottom:20px;
+}
+#play p {
+	margin-left:5%;
+	text-align: justify;
+	color: #0B4C5F;
+	font-size:14px;
+	width: 80%;
+}
+#play p strong {
+	font-size: 18px;
+}
+
+#message {
+	margin-left:5%;
+	font-size: 16px;
+	padding:4px;
+	padding-bottom:10px;
+}
+
+#playagain {
+	clear:both;
+}
+#playagain p {
+	font-size: 16px;
+	text-align: center;
+}
+#playagain a {
+	color:#0B2161;
+	text-decoration: underline;
+}
+#playagain a:hover{
+	color:green;
+}
+
+

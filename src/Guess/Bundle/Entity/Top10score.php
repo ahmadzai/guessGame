@@ -6,70 +6,39 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Guess\Bundle\Entity\Top10score
- *
- * @ORM\Table(name="Top10Score")
- * @ORM\Entity
  */
 class Top10score
 {
     /**
-     * @var integer $id
-     *
-     * @ORM\Column(name="id", type="integer", nullable=false)
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     */
-    private $id;
-
-    /**
      * @var integer $gametype
-     *
-     * @ORM\Column(name="gametype", type="integer", nullable=false)
      */
     private $gametype;
 
     /**
      * @var integer $gamelevel
-     *
-     * @ORM\Column(name="gamelevel", type="integer", nullable=false)
      */
     private $gamelevel;
 
     /**
      * @var integer $score
-     *
-     * @ORM\Column(name="score", type="integer", nullable=false)
      */
     private $score;
 
     /**
-     * @var datetime $date
-     *
-     * @ORM\Column(name="date", type="datetime", nullable=false)
+     * @var string $date
      */
     private $date;
 
     /**
-     * @var Player
-     *
-     * @ORM\ManyToOne(targetEntity="Player")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="player_id", referencedColumnName="id")
-     * })
+     * @var integer $id
+     */
+    private $id;
+
+    /**
+     * @var Guess\Bundle\Entity\Player
      */
     private $player;
 
-
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * Set gametype
@@ -134,7 +103,7 @@ class Top10score
     /**
      * Set date
      *
-     * @param datetime $date
+     * @param string $date
      */
     public function setDate($date)
     {
@@ -144,11 +113,21 @@ class Top10score
     /**
      * Get date
      *
-     * @return datetime 
+     * @return string 
      */
     public function getDate()
     {
         return $this->date;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**

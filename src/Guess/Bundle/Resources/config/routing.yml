@@ -3,17 +3,42 @@ _homepage:
     defaults: {_controller: GuessBundle:Main:index }
 
 _play:
-    pattern: /play
-    defaults: {_controller: GuessBundle:Main:play }
+    pattern: /play/{game}/{level}
+    defaults: {_controller: GuessBundle:Main:play, game:0, level:0 }
 
 _score:
     pattern: /score
-    defaults: {_controller: GuessBundle:Main:myScore }
+    defaults: {_controller: GuessBundle:DB:myScore }
     
 _top10:
     pattern: /top10
-    defaults: {_controller: GuessBundle:Main:top10 }
+    defaults: {_controller: GuessBundle:DB:top10 }
     
 _howtoplay:
     pattern: /howto
     defaults: {_controller: GuessBundle:Main:howto }
+    
+_login:
+    pattern: /user
+    defaults: {_controller: GuessBundle:Main:userLogin }
+
+_play1d:
+    pattern: /play1d
+    defaults: {_controller: GuessBundle:Main:play1d }
+    
+_play2d:
+    pattern: /play2d
+    defaults: {_controller: GuessBundle:Main:play2d }
+    
+_play3d:
+    pattern: /play3d
+    defaults: {_controller: GuessBundle:Main:play3d }
+ 
+_logout:
+    pattern: /leave
+    defaults: {_controller: GuessBundle:Main:logout }
+
+_about:
+    pattern: /about
+    defaults: {_controller: GuessBundle:Main:about }
+    

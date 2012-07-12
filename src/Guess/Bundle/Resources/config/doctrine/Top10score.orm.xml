@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="Guess\Bundle\Entity\Player" table="Player">
+  <entity name="Guess\Bundle\Entity\Top10score" table="Top10Score">
     <change-tracking-policy>DEFERRED_IMPLICIT</change-tracking-policy>
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="name" type="string" column="name" length="30"/>
+    <field name="gametype" type="integer" column="gametype"/>
+    <field name="gamelevel" type="integer" column="gamelevel"/>
+    <field name="score" type="integer" column="score"/>
     <field name="date" type="string" column="date" length="25"/>
+    <many-to-one field="player" target-entity="Player" orphan-removal="">
+      <join-columns>
+        <join-column name="player_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
     <lifecycle-callbacks/>
   </entity>
 </doctrine-mapping>

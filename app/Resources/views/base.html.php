@@ -5,12 +5,8 @@
 <title><?php $view['slots']->output('title', 'Guess Game') ?></title>
 
 <link href="<?php echo $view['assets']->getUrl('bundles/guess/images/guess.png') ?>" rel="shortcut icon" />
+<link rel="stylesheet" href="<?php echo $view['assets']->getUrl('bundles/guess/css/styles.css') ?>" />
 
-<?php foreach ($view['assetic']->stylesheets(
-            array(
-             	'bundles/guess/css/styles.css'), array('cssrewrite')) as $url): ?>
-        <link rel="stylesheet" href="<?php echo $view->escape($url) ?>" />
-<?php endforeach; ?>
 <link rel="stylesheet" href="<?php echo $view['assets']->getUrl('bundles/guess/css/content.css') ?>" />
 <script src="<?php echo $view['assets']->getUrl('bundles/guess/js/jQuery.js') ?>" type="text/javascript"></script>
 <script type="text/javascript" >
@@ -55,7 +51,7 @@ function setHeight(sidebar, content) {
 </div>
 <!-- Div for content -->
 <div id="sidebar">
-<?php $view['slots']->output('sidebar') ?>
+<?php  echo $view['actions']->render('GuessBundle:DB:getTop10'); ?>
 </div>
 <!-- Div for footer -->
 <div id="footer">

@@ -1,8 +1,16 @@
-<h2><span>Top 10 Scores and player</span></h2>
-<div id="top10header1">
-	<span>1D-Top 10 Scorer</span>
+<?php $view->extend('::base.html.php') ?>
+<?php $view['slots'] -> set('title', 'Guess game')?>
+<?php 
+$view['slots']->start('menu');
+echo $view->render('::header.html.php', array('page' => $page));
+$view['slots']->stop();
+?>
+<div id="content-home">
+<h2>Top 10 Scores and Players</h2>
+<p>Following are the list of Top 10 players and his socres in different game</p>
 </div>
-<div id="one-d">
+<div id="play-1d">
+<h2>1 Dimention Top 10</h2>
 <ul id="toplist">
 	<?php $top1d = $top10['d_1']; 
 	if(count($top1d)>0) {
@@ -15,10 +23,8 @@
 	?>
 </ul>
 </div>
-<div id="top10header2">
-	<span>2D-Top 10 Scorer</span>
-</div>
-<div id="two-d">
+<div id="play-2d">
+<h2>2 Dimention top 10</h2>
 <ul id="toplist">
 	<?php $top2d = $top10['d_2']; 
 	if(count($top2d)>0) {
@@ -31,10 +37,8 @@
 	?>
 </ul>
 </div>
-<div id="top10header3">
-	<span>3D-Top 10 Scorer</span>
-</div>
-<div id="three-d">
+<div id="play-3d">
+<h2>3 Dimention top 10</h2>
 <ul id="toplist">
 	<?php $top3d = $top10['d_3']; 
 	if(count($top3d)>0) {
